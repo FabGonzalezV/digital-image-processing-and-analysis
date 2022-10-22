@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/index.js"></script>
+    <title>PDI</title>
+  </head>
+  <body>
+    <nav>
+      <div id="container-nav">
+        <div id="container-list-a">
+          <div id="btn-algoritmo" class="btn-nav">
+            <span name="a">Algoritmos</span>
+          </div>
+          <div id="container-a">
+            <div id="title-a1" class="title-a">
+              <span>Segmentar------</span>
+              <span id="segmentar" class="aplicar">Aplicar</span>
+            </div>
+            <div id="descripcion-a1" class="descripcion-a">
+              <span>
+                Devuelve una imagen en blanco y negro
+              </span>
+            </div>
+
+            <div id="title-a2" class="title-a">
+              <span>Dilatación------</span>
+              <span id="dilatacion" class="aplicar">Aplicar</span>
+            </div>
+            <div id="descripcion-a2" class="descripcion-a">
+              <span> engorda la imagen </span>
+            </div>
+
+            <div id="title-a3" class="title-a">
+              <span>Erosión------</span>
+              <span id="erosion" class="aplicar">Aplicar</span>
+            </div>
+            <div id="descripcion-a3" class="descripcion-a">
+              <span>
+                adelgaza la imagen
+              </span>
+            </div>
+
+            <div id="title-a4" class="title-a">
+              <span>perimetro------</span>
+              <span id="perimetro" class="aplicar">Aplicar</span>
+            </div>
+            <div id="descripcion-a4" class="descripcion-a">
+              <span>
+                Obtiene el perimetro 
+              </span>
+            </div>
+
+            <div id="title-a5" class="title-a">
+              <span>cierre------</span>
+              <span id="cierre" class="aplicar">Aplicar</span>
+            </div>
+            <div id="descripcion-a5" class="descripcion-a">
+              <span> une regiones pequeñas </span>
+            </div>
+
+            <div id="title-a6" class="title-a">
+              <span>Limpieza-------</span>
+              <span id="limpieza" class="aplicar">Aplicar</span>
+            </div>
+            <div id="descripcion-a6" class="descripcion-a">
+              <span>
+                quita pequeñas regiones
+              </span>
+            </div>
+
+             
+          </div>
+        </div>
+        <div class="btn-nav">
+          <input type="file" name="img1" id="img1"   />
+        </div>
+        
+      </div>
+    </nav>
+
+    <main>
+      <div id="container-section">
+        <section id="section-herramientas">
+          <div id="container-herramientas" class="tools">
+             <span>Umbral</span><br>
+             <div><span>0</span>
+              <input type="range" name="umbral" id="umbral" max="250">
+              <span>100</span></div>
+              <span>Tamaño de matris</span>
+              <div>
+                <span>MxM <input id= "m" type="number" value="3"></span>
+                 
+              </div>
+               <br>
+           
+          </div>
+        </section>
+        <section id="section-canvas">
+          <div id="container-canvas">
+            
+
+            <canvas id="frame" width="1000" height="1000"></canvas>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

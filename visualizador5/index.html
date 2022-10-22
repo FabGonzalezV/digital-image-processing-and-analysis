@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/index.js"></script>
+    <title>PDI</title>
+  </head>
+  <body>
+    <nav>
+      <div id="container-nav">
+        <div id="container-list-a">
+          <div id="btn-algoritmo" class="btn-nav">
+            <span name="a">Algoritmos</span>
+          </div>
+          <div id="container-a">
+            <div id="title-a1" class="title-a">
+              <span>RGB------</span>
+              <span id="RGB" class="aplicar">Aplicar</span>
+            </div>
+            <div id="descripcion-a1" class="descripcion-a">
+              <span>
+                Separa la imagen en sus tres canales(rojo, verde, azúl)
+              </span>
+            </div>
+
+            <div id="title-a2" class="title-a">
+              <span>Escala de grises------</span>
+              <span id="escala-gris" class="aplicar">Aplicar</span>
+            </div>
+            <div id="descripcion-a2" class="descripcion-a">
+              <span> convierte a escala de grises la imagen </span>
+            </div>
+
+            <div id="title-a3" class="title-a">
+              <span>Histograma de escala de grises------</span>
+              <span id="H-gris" class="aplicar">Aplicar</span>
+            </div>
+            <div id="descripcion-a3" class="descripcion-a">
+              <span>
+                Obtiene el histograma de los tonos de gris en la imagen
+              </span>
+            </div>
+
+            <div id="title-a4" class="title-a">
+              <span>Histograma RGB------</span>
+              <span id="H-RGB" class="aplicar">Aplicar</span>
+            </div>
+            <div id="descripcion-a4" class="descripcion-a">
+              <span>
+                Obtiene el histograma de los tonos(RGB) en la imagen
+              </span>
+            </div>
+
+            <div id="title-a5" class="title-a">
+              <span>Negativo------</span>
+              <span id="negativo" class="aplicar">Aplicar</span>
+            </div>
+            <div id="descripcion-a5" class="descripcion-a">
+              <span> Obtiene el negativo de una imagen </span>
+            </div>
+
+            <div id="title-a6" class="title-a">
+              <span>Operadores lógicos(OR, AND, NOT)-------</span>
+              <span id="operadores" class="aplicar">Aplicar</span>
+            </div>
+            <div id="descripcion-a6" class="descripcion-a">
+              <span>
+                Aplica una operación lógica entre dos imagenes dando como
+                resultado una nueva imagen. Las operaciones son: AND, OR y NOT.
+              </span>
+            </div>
+
+            <div id="title-a7" class="title-a">
+              <span>Seleccionar región-------</span>
+              <span id="seleccionar" class="aplicar">Aplicar</span>
+            </div>
+            <div id="descripcion-a7" class="descripcion-a">
+              <span>
+               Selecciona una región y el resto lo convierte a escala de grises
+              </span>
+            </div>
+ 
+            <div id="title-a8" class="title-a">
+              <span>Bordes escala de grises -------</span>
+              <span id="bordes" class="aplicar">Aplicar</span>
+            </div>
+            <div id="descripcion-a8" class="descripcion-a">
+              <span>
+               Marca los bordes horizontales y verticales de una imagen en escala de grises
+              </span>
+            </div>
+            <div id="title-a9" class="title-a">
+              <span>Bordes RGB -------</span>
+              <span id="bordesc" class="aplicar">Aplicar</span>
+            </div>
+            <div id="descripcion-a9" class="descripcion-a">
+              <span>
+               Marca los bordes horizontales y verticales de una imagen a color
+              </span>
+            </div>
+ 
+            <div id="title-a10" class="title-a">
+              <span>Suma -------</span>
+              <span id="suma" class="aplicar">Aplicar</span>
+            </div>
+            <div id="descripcion-a10" class="descripcion-a">
+              <span>
+               
+               Operación aritmética de suma entre dos imágenes
+              </span>
+            </div>
+
+            <div id="title-a11" class="title-a">
+              <span>Resta -------</span>
+              <span id="resta" class="aplicar">Aplicar</span>
+            </div>
+            <div id="descripcion-a11" class="descripcion-a">
+              <span>
+               
+               Operación aritmética de resta entre dos imágenes
+              </span>
+            </div>
+
+          </div>
+        </div>
+        <div class="btn-nav">
+          <input type="file" name="img1" id="img1"   />
+        </div>
+        <div class="btn-nav">
+          <input type="file" name="img2" id="img2"   />
+        </div>
+        
+      </div>
+    </nav>
+
+    <main>
+      <div id="container-section">
+        <section id="section-herramientas">
+          <div id="container-herramientas"></div>
+        </section>
+        <section id="section-canvas">
+          <div id="container-canvas">
+            <canvas id="frame" width="1050" height="1200"></canvas>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
